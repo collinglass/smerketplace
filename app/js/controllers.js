@@ -6,7 +6,7 @@ var angular = angular || {};
 var siebuApp = angular.module('siebuApp', []);
 
 siebuApp.controller('SiebuCtrl', function($scope, $http) {
-  	$http.get('items/items.json').success(function(data) {
+  	$http.get('api/items/').success(function(data) {
    		$scope.items = data;
   	});
 
