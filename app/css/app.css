@@ -28,3 +28,204 @@
   content: "";
   padding: 0;
 }
+
+/* Custom Code */
+
+.photo {
+  margin: 10px 0 10px 50px;
+  float:left;
+  padding: 10px;
+  border: 1px dashed black;
+}
+
+.image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+._container {
+  background-color: rgb(222, 222, 222);
+  padding-bottom: 10px;
+}
+
+.text-4 {
+  width: 9.1666666666%;
+  margin: 14px 0 0 1.6666666667%;
+}
+
+.bg-img {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Macaw Code TODO:remove */
+
+
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 1em/1.38 Helvetica;
+  color: rgb(0,0,0);
+}
+
+.element {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+
+.text {
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0,0,0);
+}
+
+.element-1 {
+  top: 0;
+  z-index: 1;
+  padding-bottom: 18px;
+  background-color: rgba(222, 222, 222, 0);
+}
+
+.element-2 {
+  top: 130px;
+  z-index: 2;
+}
+
+.element-3 {
+  top: 481px;
+  z-index: 3;
+}
+
+.text-1 {
+  float: left;
+  margin: 28px 0 0 4.0625%;
+}
+
+.text-2 {
+  float: left;
+  margin: 28px 0 0 51.6666666667%;
+}
+
+.text-3 {
+  float: left;
+  margin: 28px 0 0 6.25%;
+}
+
+@media(max-width: 480px) {
+  img {
+    top: 291px;
+    left: 0;
+    right: auto;
+    width: 479px;
+    height: auto;
+  }
+
+  ._container {
+    top: 79px;
+    padding-bottom: 189px;
+  }
+
+  .element-1 {
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .element-2 {
+    left: 0;
+    z-index: 2;
+    width: 43.9583333333%;
+  }
+
+  .element-3 {
+    left: 56.0416666667%;
+    z-index: 3;
+    width: 47.5%;
+  }
+
+  .text-1 {
+    margin-left: 10%;
+  }
+
+  .text-2 {
+    margin-left: 19.1666666667%;
+  }
+
+  .text-3 {
+    margin-left: 6.875%;
+  }
+
+  .text-4 {
+    width: 29.2372881356%;
+    margin-top: 10px;
+    margin-left: 3.3333333333%;
+    font-size: 0.625em;
+  }
+
+  .text-5 {
+    width: 25%;
+    margin-top: 10px;
+    margin-left: 2.6315789474%;
+    font-size: 0.625em;
+  }
+
+}
+@media(max-width: 320px) {
+  body {
+    font-size: 1em;
+  }
+
+  img {
+    top: 394px;
+    left: -26.25%;
+    height: auto;
+  }
+
+  ._container {
+    top: 68px;
+    padding-bottom: 301px;
+  }
+
+  .element-1 {
+    z-index: 1;
+    padding-bottom: 19px;
+  }
+
+  .element-2 {
+    z-index: 2;
+  }
+
+  .element-3 {
+    z-index: 3;
+    width: 44.375%;
+  }
+
+  .text-1,
+  .text-2 {
+    font-size: 0.625em;
+  }
+
+  .text-3 {
+    margin-left: 9.6875%;
+    font-size: 0.625em;
+  }
+
+  .text-4 {
+    width: 43.8559322034%;
+    margin-top: 12px;
+  }
+
+  .text-5 {
+    width: 41.5492957746%;
+    margin-top: 12px;
+    margin-left: 4.2253521127%;
+  }
+
+}

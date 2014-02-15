@@ -1,23 +1,96 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="siebuApp">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Smerketplace</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/app-grid.css">
   <link rel="stylesheet" href="css/app.css"/>
 </head>
-<body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<body class="body index clearfix" ng-controller="SiebuCtrl">
 
-  <div ng-view></div>
+  <img class="bg-img" src="img/smerketplace-479x69.jpg" data-rimage data-src="img/smerketplace-1200x750.jpg" data-srcmax480="img/smerketplace-479x69.jpg" data-srcmax320="img/smerketplace-479x69.jpg">
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <div class="element element-1 clearfix js-navbar">
+    <p class="text text-1">Welcome Siebu,</p>
+    <p class="text text-2">My Smerket</p>
+    <p class="text text-3 js-cart">My Cart</p>
+  </div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
+
+  <div class="element _container element-2 clearfix">
+    <p class="text text-4">New for You</p>
+
+    <div class="photo photo1">
+      <img class="image" src="img/1.jpg">
+      <p>Item 1</p>
+    </div>
+
+    <div class="photo photo2">
+      <img class="image" src="img/2.jpg">
+      <p>Item 2</p>
+    </div>
+    <div class="photo photo3">
+      <img class="image" src="img/3.jpg">
+      <p>Item 3</p>
+    </div>
+
+    <div class="photo photo4">
+      <img class="image" src="img/4.jpg">
+      <p>Item 4</p>
+    </div>
+
+    <div class="photo photo5">
+      <img class="image" src="img/5.jpg">
+      <p>Item 5</p>
+    </div>
+
+    <div class="photo photo6">
+      <img class="image" src="img/6.jpg">
+      <p>Item 6</p>
+    </div>
+
+  </div>
+
+  <div class="element _container element-3 clearfix">
+    <p class="text text-4">Recommended</p>
+
+    <div class="photo photo7">
+      <img class="image" src="img/7.jpg">
+      <p>Item 7</p>
+    </div>
+
+    <div class="photo photo8">
+      <img class="image" src="img/8.jpg">
+      <p>Item 8</p>
+    </div>
+    <div class="photo photo9">
+      <img class="image" src="img/9.jpg">
+      <p>Item 9</p>
+    </div>
+
+    <div class="photo photo10">
+      <img class="image" src="img/10.jpg">
+      <p>Item 10</p>
+    </div>
+
+    <div class="photo photo11">
+      <img class="image" src="img/11.jpg">
+      <p>Item 11</p>
+    </div>
+
+    <div class="photo photo12">
+      <img class="image" src="img/12.jpg">
+      <p>Item 12</p>
+    </div>
+
+  </div>
+
+  <script src="lib/jquery-min.js"></script>
+  <script src="lib/rimages.js"></script>
+
+  <script src="lib/jquery-min.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
   <script src="js/app.js"></script>

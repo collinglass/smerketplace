@@ -2,10 +2,12 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+var siebuApp = angular.module('siebuApp', []);
 
-  }])
-  .controller('MyCtrl2', [function() {
+siebuApp.controller('SiebuCtrl', function($scope, $http) {
+  $http.get('items/items.json').success(function(data) {
+    $scope.items = data;
+  });
 
-  }]);
+  $scope.orderProp = 'age';
+});
