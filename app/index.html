@@ -14,7 +14,7 @@
 
   <div class="element element-1 clearfix js-navbar">
     <p class="text text-1">Welcome Siebu,</p>
-    <p class="text text-2">My Smerket</p>
+    <p class="text text-2">My Smerkets</p>
     <p class="text text-3 js-cart">My Cart</p>
   </div>
 
@@ -22,68 +22,28 @@
   <div class="element _container element-2 clearfix">
     <p class="text text-4">New for You</p>
 
-    <div class="photo photo1">
-      <img class="image" src="img/1.jpg">
-      <p>Item 1</p>
-    </div>
-
-    <div class="photo photo2">
-      <img class="image" src="img/2.jpg">
-      <p>Item 2</p>
-    </div>
-    <div class="photo photo3">
-      <img class="image" src="img/3.jpg">
-      <p>Item 3</p>
-    </div>
-
-    <div class="photo photo4">
-      <img class="image" src="img/4.jpg">
-      <p>Item 4</p>
-    </div>
-
-    <div class="photo photo5">
-      <img class="image" src="img/5.jpg">
-      <p>Item 5</p>
-    </div>
-
-    <div class="photo photo6">
-      <img class="image" src="img/6.jpg">
-      <p>Item 6</p>
-    </div>
+    <ul class="items">
+      <li ng-repeat="item in items | filter:newItem">
+        <div class="photo">
+          <img class="image" ng-src="{{item.imageUrl}}">
+          <p>{{item.name}}</p>
+        </div>
+      </li>
+    </ul>
 
   </div>
 
   <div class="element _container element-3 clearfix">
     <p class="text text-4">Recommended</p>
 
-    <div class="photo photo7">
-      <img class="image" src="img/7.jpg">
-      <p>Item 7</p>
-    </div>
-
-    <div class="photo photo8">
-      <img class="image" src="img/8.jpg">
-      <p>Item 8</p>
-    </div>
-    <div class="photo photo9">
-      <img class="image" src="img/9.jpg">
-      <p>Item 9</p>
-    </div>
-
-    <div class="photo photo10">
-      <img class="image" src="img/10.jpg">
-      <p>Item 10</p>
-    </div>
-
-    <div class="photo photo11">
-      <img class="image" src="img/11.jpg">
-      <p>Item 11</p>
-    </div>
-
-    <div class="photo photo12">
-      <img class="image" src="img/12.jpg">
-      <p>Item 12</p>
-    </div>
+    <ul class="items">
+      <li ng-repeat="item in items | filter:recommended">
+        <div class="photo">
+          <img class="image" ng-src="{{item.imageUrl}}">
+          <p>{{item.name}}</p>
+        </div>
+      </li>
+    </ul>
 
   </div>
 
