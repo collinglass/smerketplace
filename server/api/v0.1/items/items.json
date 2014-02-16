@@ -28,7 +28,7 @@
     },
     {
         "timeStamp": 4,
-        "shopID": 4,
+        "shopID": 1,
         "itemID": 4,
         "itemName": "Item 4",
         "itemDescription": "This is the coolest phone.",
@@ -37,7 +37,7 @@
     },
     {
         "timeStamp": 5,
-        "shopID": 5,
+        "shopID": 2,
         "itemID": 5,
         "itemName": "Item 5",
         "itemDescription": "This is the coolest phone.",
@@ -46,7 +46,7 @@
     },
     {
         "timeStamp": 6,
-        "shopID": 6,
+        "shopID": 3,
         "itemID": 6,
         "itemName": "Item 6",
         "itemDescription": "This is the coolest phone.",
@@ -55,7 +55,7 @@
     },
     {
         "timeStamp": 7,
-        "shopID": 7,
+        "shopID": 1,
         "itemID": 7,
         "itemName": "Item 7",
         "itemDescription": "This is the coolest phone.",
@@ -64,7 +64,7 @@
     },
     {
         "timeStamp": 8,
-        "shopID": 8,
+        "shopID": 2,
         "itemID": 8,
         "itemName": "Item 8",
         "itemDescription": "This is the coolest phone.",
@@ -73,7 +73,7 @@
     },
     {
         "timeStamp": 9,
-        "shopID": 9,
+        "shopID": 3,
         "itemID": 9,
         "itemName": "Item 9",
         "itemDescription": "This is the coolest phone.",
@@ -82,7 +82,7 @@
     },
     {
         "timeStamp": 10,
-        "shopID": 10,
+        "shopID": 1,
         "itemID": 10,
         "itemName": "Item 10",
         "itemDescription": "This is the coolest phone.",
@@ -92,7 +92,7 @@
     },
     {
         "timeStamp": 11,
-        "shopID": 11,
+        "shopID": 2,
         "itemID": 11,
         "itemName": "Item 11",
         "itemDescription": "This is the coolest phone.",
@@ -102,7 +102,7 @@
     },
     {
         "timeStamp": 12,
-        "shopID": 12,
+        "shopID": 3,
         "itemID": 12,
         "itemName": "Item 12",
         "itemDescription": "This is the coolest phone.",

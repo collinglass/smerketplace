@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/app-grid.css">
   <link rel="stylesheet" href="css/app.css"/>
+
+  <script src="lib/jquery-min.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
 </head>
 <body class="body index clearfix" ng-controller="SiebuCtrl">
 
@@ -23,7 +32,7 @@
     <p class="text text-4">New for You</p>
 
     <ul class="items">
-      <li ng-repeat="item in items | filter:newItem">
+      <li ng-repeat="item in items | filter:isSubscribed | filter:newItem">
         <div class="photo">
           <img class="image" ng-src="{{item.imageUrl}}">
           <p>{{item.itemName}}</p>
@@ -49,14 +58,5 @@
 
   <script src="lib/jquery-min.js"></script>
   <script src="lib/rimages.js"></script>
-
-  <script src="lib/jquery-min.js"></script>
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
 </body>
 </html>

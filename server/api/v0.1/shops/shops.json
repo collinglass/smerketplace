@@ -1,20 +1,23 @@
 [
 	{
 		"shopID": 1,
-		"shopName": 123456789,
-		"shopDescription": "10/15",
-		"localCity": 333
+		"shopName": "Hello Phone",
+		"shopDescription": "Say Hi to Hello Phone.",
+		"related": [2],
+		"localCity": "Ottawa"
 	},
 	{
 		"shopID": 2,
-		"shopName": 987654321,
-		"shopDescription": "11/15",
-		"localCity": 333
+		"shopName": "Goodbye Phone",
+		"shopDescription": "Say Farewell to Goodbye Phone.",
+		"related": [3],
+		"localCity": "Toronto"
 	},
 	{
 		"shopID": 3,
-		"shopName": 192837465,
-		"shopDescription": "12/15",
-		"localCity": 333
+		"shopName": "Limbo Phone",
+		"shopDescription": "This is Limbo and we have great Phones.",
+		"related": [1],
+		"localCity": "Ottawa"
 	}
 ]

@@ -21,8 +21,6 @@ $ go run server
 ## Todo
 
 Angular:
-- New: Filter only items with timestamp within last week
-- Recommended: Filter only items with related features
 - Optional (change http.get to factory service)
 
 Backend:

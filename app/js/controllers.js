@@ -18,16 +18,26 @@ siebuApp.controller('SiebuCtrl', function($scope, $http) {
 			$scope.user = data[0];
 	
 			$scope.isSubscribed = function(item) {
-				$scope.shops.forEach(function(shop) {
-					$scope.user.subscribedShops.forEach(function(subscribed) {
-						if( shop.shopID == subscribed ) {
-							if ( item.shopID == shop.shopID ) {
-								window.console.log(subscribed + "==" + shop.shopID + "==" + item.shopID);
-								return true; // this will be listed in the results
-							}
+				if ( item.shopID == $scope.user.subscribedShops[0] ) {
+					return true; // this will be listed in the results
+				}
+				return false; // otherwise it won't be within the results
+			};
+
+			$scope.recommended = function(item) {
+				var shop;
+				for (var i=0; i<$scope.user.subscribedShops.length; i++) {
+					for (var j=0; j<$scope.shops.length; j++) {
+						if ( $scope.shops[j].shopID == $scope.user.subscribedShops[i] ) {
+							shop = $scope.shops[j];
 						}
-					});
-				});
+					}
+				}
+				for (var i=0; i<shop.related.length; i++) {
+					if ( shop.related[i] == item.shopID ) {
+						return true;
+					}
+				}
 				return false; // otherwise it won't be within the results
 			};
 		});
@@ -41,12 +51,4 @@ siebuApp.controller('SiebuCtrl', function($scope, $http) {
 		}
 		return false; // otherwise it won't be within the results
 	};
-
-	$scope.recommended = function(item) {
-		if( item.timeStamp > 6 ) {
-			return true; // this will be listed in the results
-		}
-		return false; // otherwise it won't be within the results
-	};
-
 });
