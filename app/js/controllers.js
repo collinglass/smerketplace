@@ -25,17 +25,19 @@ siebuApp.controller('SiebuCtrl', function($scope, $http) {
 			};
 
 			$scope.recommended = function(item) {
-				var shop;
+				var shops = [];
 				for (var i=0; i<$scope.user.subscribedShops.length; i++) {
 					for (var j=0; j<$scope.shops.length; j++) {
 						if ( $scope.shops[j].shopID == $scope.user.subscribedShops[i] ) {
-							shop = $scope.shops[j];
+							shops.push($scope.shops[j]);
 						}
 					}
 				}
-				for (var i=0; i<shop.related.length; i++) {
-					if ( shop.related[i] == item.shopID ) {
-						return true;
+				for (var i=0; i<shops.length; i++) {
+					for (var j=0; j<shops[i].related.length; j++) {
+						if ( shops[i].related[j] == item.shopID ) {
+							return true;
+						}
 					}
 				}
 				return false; // otherwise it won't be within the results
