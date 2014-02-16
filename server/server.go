@@ -2,16 +2,26 @@ package main
 
 import (
 	//"encoding/json"
+	"fmt"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"io"
 	"log"
 	"net/http"
 	"os"
+	"path"
 )
 
-func ItemListHandler(w http.ResponseWriter, r *http.Request) {
-	filepath := "./api/v0.1/items/items.json"
+func ListHandler(w http.ResponseWriter, r *http.Request) {
+	// open input file
+
+	w.Header().Set("Content-Type", "application/json")
+	dir, file := path.Split(r.URL.String())
+	fmt.Printf("Path: %v File: %v\n", dir, file)
+
+	filepath := "./api/v0.1/" + file + "/" + file + ".json"
+
+	fmt.Printf(filepath)
 
 	fi, err := os.Open(filepath)
 	if err != nil {
@@ -47,7 +57,11 @@ func main() {
 	log.Println("Starting Server")
 
 	r := mux.NewRouter()
-	r.HandleFunc("/api/items/", ItemListHandler).Methods("GET")
+	r.HandleFunc("/api/items", ListHandler).Methods("GET")
+	r.HandleFunc("/api/users", ListHandler).Methods("GET")
+	r.HandleFunc("/api/shops", ListHandler).Methods("GET")
+	r.HandleFunc("/api/addresses", ListHandler).Methods("GET")
+	r.HandleFunc("/api/creditcards", ListHandler).Methods("GET")
 
 	http.Handle("/api/", r)
 	http.Handle("/", logHandler(http.FileServer(http.Dir("../app/"))))

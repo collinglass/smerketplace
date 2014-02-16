@@ -1,0 +1,20 @@
+[
+	{
+		"shopID": 1,
+		"shopName": 123456789,
+		"shopDescription": "10/15",
+		"localCity": 333
+	},
+	{
+		"shopID": 2,
+		"shopName": 987654321,
+		"shopDescription": "11/15",
+		"localCity": 333
+	},
+	{
+		"shopID": 3,
+		"shopName": 192837465,
+		"shopDescription": "12/15",
+		"localCity": 333
+	}
+]

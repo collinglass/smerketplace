@@ -1,0 +1,29 @@
+[
+	{
+		"addressID": 1,
+		"streetNumber": 123,
+		"streetName": "Jacob street",
+		"aptNumber": 1,
+		"city": "Ottawa",
+		"province": "Ontario",
+		"country": "Canada"
+	},
+	{
+		"addressID": 2,
+		"streetNumber": 223,
+		"streetName": "Jacob street",
+		"aptNumber": 2,
+		"city": "Ottawa",
+		"province": "Ontario",
+		"country": "Canada"
+	},
+	{
+		"addressID": 3,
+		"streetNumber": 323,
+		"streetName": "Jacob street",
+		"aptNumber": 3,
+		"city": "Ottawa",
+		"province": "Ontario",
+		"country": "Canada"
+	}
+]

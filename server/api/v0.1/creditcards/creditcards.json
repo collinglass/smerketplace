@@ -1,0 +1,20 @@
+[
+	{
+		"cardID": 1,
+		"creditCardNumber": 123456789,
+		"expiryDate": "10/15",
+		"securityCode": 333
+	},
+	{
+		"cardID": 2,
+		"creditCardNumber": 987654321,
+		"expiryDate": "11/15",
+		"securityCode": 333
+	},
+	{
+		"cardID": 3,
+		"creditCardNumber": 192837465,
+		"expiryDate": "12/15",
+		"securityCode": 333
+	}
+]

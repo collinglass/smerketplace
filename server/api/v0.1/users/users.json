@@ -1,0 +1,38 @@
+[
+	{
+		"userID": 1,
+		"userName": "PhonesInTheSky",
+		"fullName": "Jacob Phone",
+		"email": "jacobphone@example.com",
+		"shippingAddress": 1,
+		"billingAddress": 1,
+		"creditCard": 1,
+		"subscribedShops": [2],
+		"purchasedItems": [1],
+		"ownedShops": [1]
+	},
+	{
+		"userID": 2,
+		"userName": "PhonesInTheSky",
+		"fullName": "Jacob Phone",
+		"email": "jacobphone@example.com",
+		"shippingAddress": 2,
+		"billingAddress": 2,
+		"creditCard": 2,
+		"subscribedShops": [3],
+		"purchasedItems": [2],
+		"ownedShops": [2]
+	},
+	{
+		"userID": 3,
+		"userName": "PhonesInTheSky",
+		"fullName": "Jacob Phone",
+		"email": "jacobphone@example.com",
+		"shippingAddress": 3,
+		"billingAddress": 3,
+		"creditCard": 3,
+		"subscribedShops": [1],
+		"purchasedItems": [3],
+		"ownedShops": [3]
+	}
+]
