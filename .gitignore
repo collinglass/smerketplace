@@ -1,9 +1,9 @@
-logs/
+logs/*
 !.gitkeep
 node_modules/
 tmp
 .DS_Store
 .idea
-test/
-scripts/
-config/
+test/*
+scripts/*
+config/*
